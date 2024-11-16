@@ -1,0 +1,13 @@
+{
+    "name": "leetcode",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "LeetCode.vscode-leetcode"
+            ]
+        }
+    }
+}
