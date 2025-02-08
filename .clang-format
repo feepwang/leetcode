@@ -1,0 +1,13 @@
+---
+Language: Cpp
+BasedOnStyle: Google
+AllowShortBlocksOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AlignTrailingComments: true
+ColumnLimit: 80
+TabWidth: 4
+IndentWidth: 4
+DerivePointerAlignment: false
+LambdaBodyIndentation: OuterScope
