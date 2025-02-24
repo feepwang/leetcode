@@ -12,15 +12,18 @@ using namespace std;
 class Solution {
    public:
     int lengthOfLastWord(string s) {
-        int result = s[0] == ' ' ? 0 : 1;
-        for (int i = 1; i < s.length(); i++) {
-            if (s[i] != ' ') {
-                if (s[i-1] == ' ') {
-                    result = 1;
-                } else {
-                    result++;
-                }
-            }
+        int index = s.length() - 1;
+        while (index >= 0 && s[index] == ' ') {
+            index--;
+        }
+        if (index < 0) {
+            return 0;
+        }
+        
+        int result = 0;
+        while (index >= 0 && s[index] != ' ') {
+            result++;
+            index--;
         }
         return result;
     }
